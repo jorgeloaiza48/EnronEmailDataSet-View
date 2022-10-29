@@ -42,7 +42,7 @@
         </thead>
         <tbody>
             <tr class="border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">                               
-                <td class="text-justify py-4 px-6 text-sm font-medium text-center border border-slate-300"><p class=" tBody text-ellipsis overflow-hidden"></p></td>              
+                <td class="text-justify py-4 px-6 text-sm font-medium text-center border border-slate-300"><p class=" tBody text-ellipsis overflow-hidden text-justify"></p></td>              
             </tr>            
         </tbody>
     </table>
@@ -114,7 +114,7 @@
       </vs-table>
       </div> -->
 
-     <!-- Paginación -->
+     <!-- Paginación     https://www.youtube.com/watch?v=cuirNvBx8U8 -->
       <div class="fixed bottom-3 left-12">        
               <jw-pagination :pageSize=10 :items="correos" @changePage="onChangePage" ></jw-pagination>       
       </div>
