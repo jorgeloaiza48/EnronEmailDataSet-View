@@ -1,7 +1,7 @@
 
 <template> 
 <div>   
-    
+    <h1 class="text-1xl font-bold text-center uppercase sticky top-5">Enron Email DataSet</h1>
 <!--**************************************** Overflow scrolling **************************************************-->
     <div id="pepe" class="relative shadow-md sm:rounded-lg flex justify-start hover:justify-between mt-10 ml-2 mr-4 ">
     <div class="pepe1 overflow-scroll fixed left-0 mx-8 mb-10 ">           
@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="correo in pageOfItems" :key="correo.ID" v-on:click="select($event,correos)" v-bind:id="correo.ID" class="emails border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">               
+            <tr v-for="correo in pageOfItems" :key="correo.ID" v-on:click="select($event,correos)" v-bind:id="correo.ID" class="emails border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-300 ">               
                 <td class="py-4 px-6 text-sm font-medium  border border-slate-300 ">{{ correo.ID }}</td>
                 <td class="py-4 px-6 text-sm font-medium  border border-slate-300 text-ellipsis overflow-hidden">{{ correo.from }}</td>
                 <td class="py-4 px-6 text-sm font-small   border border-slate-300 text-ellipsis overflow-hidden">{{ correo.to }}</td>
@@ -115,7 +115,7 @@
       </div> -->
 
      <!-- Paginación     https://www.youtube.com/watch?v=cuirNvBx8U8 -->
-      <div class="fixed bottom-3 left-12">        
+      <div class="fixed bottom-1 left-11">        
               <jw-pagination :pageSize=10 :items="correos" @changePage="onChangePage" ></jw-pagination>       
       </div>
 
